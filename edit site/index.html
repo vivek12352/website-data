@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VE-A Complete Video Editing SOftware</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0px
+        }
+
+        .logo img {
+            width: 280px;
+        }
+
+        nav {
+            padding: 25px;
+            height: 50px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .navi ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        ul li {
+            padding: 25px;
+            align-items: center;
+            list-style: none;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        ul li span a {
+            color: black;
+            text-decoration: none;
+            justify-content: center;
+            align-items: center;
+        }
+
+        ul li span a:hover {
+            color: rgba(32, 22, 22, 0.699);
+        }
+
+        h1 {
+            margin: 50px;
+            padding: 86px 0px 0px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+        }
+
+        p {
+
+            display: flex;
+            justify-content: center;
+            color: black;
+            font-size: 18px;
+            padding: 0px 0px 0px 48px;
+            align-items: center;
+        }
+
+        .butn ul li a {
+            position: relative;
+            top: 25px;
+            color: white;
+            background-color: rgb(9, 9, 10);
+            padding: 19px;
+            border-radius: 19px;
+            display: flex;
+            font-size: 19px;
+            text-decoration: none;
+            align-items: center;
+            justify-content: space-around;
+
+        }
+
+        .butn ul li a:hover {
+            background-color: rgb(168, 153, 153);
+            text-decoration: none;
+            color: whitesmoke;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            padding: 44px
+        }
+
+        .logo1 img {
+            width: 98px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .data p {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            padding: 5px;
+        }
+
+        .grid {
+
+            gap: 6dvh;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            grid-template-columns: auto auto auto;
+
+
+        }
+
+        .grid h3 {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            padding: 5px;
+        }
+
+        .grid p {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            padding: 5px;
+            font-size: 12px;
+            margin: -25px 0px 0px 0px;
+        }
+
+        .grid button {
+            padding: 12px 20px;
+            background-color: rgb(9, 9, 10);
+            color: white;
+            border-radius: 9px;
+            border: 1px solid white;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 15px;
+
+
+        }
+
+        .grid button:hover {
+            padding: 12px 20px;
+            background-color: #81c780;
+            color: white;
+            border-radius: 9px;
+        }
+
+        .box-1 {
+            display: grid;
+            background-color: #f9f9f9;
+            justify-content: center;
+            align-items: center;
+            width: 300.797px;
+            height: 144.438px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 20px;
+            /* border: 2px solid black; */
+        }
+
+        .box-2 {
+            width: 300.797px;
+            height: 144.438px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 20px;
+            display: grid;
+            justify-content: center;
+            background-color: #f9f9f9;
+            align-items: center;
+        }
+
+        .box-3 {
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 20px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            width: 300.797px;
+            background-color: #f9f9f9;
+            height: 144.438px;
+            /* border: 2px solid black; */
+        }
+
+        .box-4 {
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 20px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            width: 300.797px;
+            height: 144.438px;
+            /* border: 2px solid black; */
+            background-color: #f9f9f9;
+        }
+
+        .box-5 {
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 20px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            width: 300.797px;
+            height: 144.438px;
+            /* border: 2px solid black; */
+            background-color: #f9f9f9;
+        }
+
+        .box-6 {
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 20px;
+            background-color: #f9f9f9;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            width: 300.797px;
+            height: 144.438px;
+            /* border: 2px solid black; */
+        }
+
+        .design {
+            width: auto;
+            height: 700px;
+            border: 2px solid black;
+            line-height: 18px;
+            /* display: flex; */
+            background-color: #222222;
+            display: contents;
+            color: white;
+            padding: 0px;
+            margin: 0px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        .design2 h2 {
+            text-align: center;
+            font-size: 26px;
+           margin:  -50px 0px 93px 0px;
+        }
+
+        .design2 {
+            border: 2px solid rgb(252, 252, 252);
+            width: 345px;
+            height: 264.969px;
+            background-color: whitesmoke;
+            border-radius: 24px;
+            padding: 73px;
+            /* margin: 40px 6px 0px 192px; */
+
+        }
+
+        .design2 .mail {
+            margin: 5px;
+            color: #00b6d1;
+            padding: 5px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .design2 .mail label {
+            margin: 5px;
+            color: #060707;
+            /* padding: 63px 112px 1px 66px; */
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .design2 button {
+            border-radius: 12px;
+            background-color: #00b6d1;
+            border-radius: 12px;
+    background-color: #00b6d1;
+    width: 25vw;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 0px;
+    font-size: 26px;
+    margin: 9px 0px 0px 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            padding: 0px;
+            font-size: 23px;
+            margin: 12px 0px 0px 0px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .design2 .mail input {
+            font-size: 29px;
+            text-align: center;
+            border-radius: 17px;
+            margin: 5px;
+            color: #00b6d1;
+            padding: 3px 29px 02px 33px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .design2 .mail1 {
+            padding: 5px;
+            color: #101111;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .signup {
+
+
+            background-color: #222222;
+            color: white;
+            padding: 30px 70px 30px 100px;
+            margin: 0px 0px 0px 57px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .form1 {
+            justify-content: space-around;
+            display: flex;
+            background-color: #222222;
+            color: white;
+            padding: 30px 70px 30px 100px;
+            margin: 0px 0px 0px 57px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+
+        /* .signup1 button { */
+
+        /* border-radius: 12px;
+            background-color: #00b6d1;
+            width: 18vw;
+            height: 11vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            padding: 0px;
+            font-size: 23px;
+            margin: 0px 0px 0px 0px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+
+
+        /* } */
+        .design2 button:hover {
+            background-color: #7d979b8a;
+        }
+
+        .signup h2 {
+            margin: 5px;
+            color: #edeff0;
+            padding: 5px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .signup p {
+            margin: 5px;
+            color: #fcfcfc;
+            padding: 5px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .botm {
+            background-color: #222222;
+            color: white;
+            padding: 30px 70px 30px 100px;
+            margin: 5px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .botm h2 {
+            margin: 5px;
+            color: #edeff0;
+            padding: 5px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .botm p {
+            margin: 5px;
+            color: #fcfcfc;
+            padding: 5px;
+            display: grid;
+            justify-content: center;
+            align-items: center;}
+        .last1 h2 {
+            margin: 5px;
+            color: #edeff0;
+            padding: 5px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .last1 p {
+            margin: 5px;
+            color: #fcfcfc;
+            padding: 5px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+        .last1{
+            background-color: #222222;
+            color: white;
+            padding: 30px 70px 30px 100px;
+            margin: 5px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/"><img src="Untitled-1.jpg" alt=""></a>
+            </div>
+            <div class="navi">
+                <ul>
+                    <li><span><a href="https://www.youtube.com/watch?v=IhRHA5PuGzg">Products</a></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            width="24" height="24" color="#000000" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li><span><a href="/">Pricing</a></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            width="24" height="24" color="#000000" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li><span><a href="/">Resources</a></span><svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li><span><a href="/">About Us</a></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            width="24" height="24" color="#000000" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li><span><a href="/">Contact us</a></span><svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li><span><a href="/"><img src="Lang.png" alt=""></a></span><svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="main">
+        <br>
+        <h1>An Ultimate Video Editing Software For Windows </h1>
+        <p>Download and try VivekEdit before you buy it! This download includes the full Windows version of
+            the Video editor.</p>
+    </div>
+    <div class="butn">
+        <ul>
+            <li><a href="/">Download for Windows</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="logo1">
+            <img src="ve-logo_590037-226.jpg" alt="">
+        </div>
+        <div class="data">
+            <p>Download VivekEdit v2024.0(released 28/06/2024)</p>
+        </div>
+
+    </div>
+    <div class="grid">
+        <div class="box-1">
+            <h3>English</h3>
+            <button>DOWNLOAD FOR 64-BIT</button>
+        </div>
+        <div class="box-2">
+            <h3>Deutsch</h3>
+            <p>German</p>
+            <button>DOWNLOAD FOR 64-BIT</button>
+        </div>
+        <div class="box-3">
+            <h3>Italiano</h3>
+            <p>Italian</p>
+            <button>DOWNLOAD FOR 64-BIT</button>
+        </div>
+        <div class="box-4">
+            <h3>Español</h3>
+            <p>Spanish</p>
+            <button>DOWNLOAD FOR 64-BIT</button>
+        </div>
+        <div class="box-5">
+            <h3>français</h3>
+            <p>French</p>
+            <button>DOWNLOAD FOR 64-BIT</button>
+        </div>
+        <div class="box-6">
+            <h3>Português brasileiro</h3>
+            <p>Brazilian Portuguese</p>
+            <button>DOWNLOAD FOR 64-BIT</button>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="design">
+        <div class="signup">
+            <h2>Join the VivekEdit newsletter</h2>
+            <p>Sign up for our newsletter and receive emails for the latest news, blogs, and special deals on UltraEdit.
+            </p>
+        </div>
+    </div>
+    <div class="form1">
+        <div class="last1">
+            <h2>EXE or MSI?</h2>
+            <p>The EXE builds of our products are the preferred download for most of our users, running Windows 8.1 and later.
+
+                We make MSI builds available for bulk or silent deployments (command line, GPO, SCCM, etc.). </p>
+                    </div>        <div class="design2">
+            <div class="mail">
+                <h2>Subscribe to our emails </h2>
+                <div class="mail1">
+                    <label for="email">Enter email address</label>
+                    <input type="email" id="email">
+                    <button>SIGN UP</button>
+                </div>
+            </div>
+            <!-- <div class="signup1">
+                <button>SIGN UP</button>
+            </div> -->
+                    </div>
+        <div class="botm">
+            <div class="last">
+                <h2>Free trial period</h2>
+                <p>This application comes with a free, fully functional 30 day trial period. After the trial period
+                    expires, you must purchase a license to continue using it.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
